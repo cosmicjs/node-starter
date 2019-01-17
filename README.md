@@ -14,3 +14,5 @@ cosmic init node-starter
 cd node-starter
 cosmic start
 ```
+## [Node.js CMS](https://cosmicjs.com/knowledge-base/nodejs-cms)
+Cosmic JS offers a [Headless CMS](https://cosmicjs.com/headless-cms) used to power content for your Node.js websites and apps.
