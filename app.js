@@ -3,10 +3,12 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const Cosmic = require('cosmicjs')
 const api = Cosmic()
-const COSMIC_BUCKET = process.env.COSMIC_BUCKET || 'node-starter'
+const bucket_slug = process.env.COSMIC_BUCKET || 'node-starter'
+const read_key = process.env.COSMIC_READ_KEY
 var opn = require('opn')
 const bucket = api.bucket({
-	slug: COSMIC_BUCKET
+	slug: bucket_slug,
+	read_key: read_key
 })
 app.set('view engine', 'ejs')
 app.get('/:slug?', async (req, res) => {
